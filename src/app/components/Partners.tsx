@@ -4,7 +4,7 @@ export default function Partners() {
       { name: "Trello", src: "/logos/trello.png" },
       { name: "Monday", src: "/logos/monday.png" },
       { name: "Notion", src: "/logos/Notion.png" },
-      { name: "Slack", src: "/logos/slack.png" },
+      { name: "Slack", src: "/logos/Slack.png" },
     ];
   
     return (
