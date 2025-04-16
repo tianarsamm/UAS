@@ -25,7 +25,7 @@ const Features = () => (
     <div className="max-w-6xl mx-auto px-6">
       <SectionTitle
         label="WHAT WE DO"
-        title="We provide the Perfect Solution \nto your business growth"
+        title="We provide the Perfect Solution to your business growth"
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {features.map((feature, index) => (
