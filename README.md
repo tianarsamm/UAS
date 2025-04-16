@@ -1,3 +1,73 @@
+# Platform Loyalitas Pelanggan
+Sebuah platform yang kuat untuk meningkatkan retensi pelanggan dan keterlibatan dengan alat yang mudah digunakan.
+
+## Prasyarat
+- NPM atau Yarn untuk mengelola dependensi
+
+## Instalasi
+1. Clone repositori:
+   git clone https://github.com/tianarsamm/utspemweb019.git
+2. Masuk ke direktori proyek:
+   cd my-project
+3. Instal dependensi:
+   npm install
+5. Jalankan aplikasi:
+   npm start
+
+## Penggunaan
+Buka browser dan akses:
+http://localhost:3000
+
+- Halaman utama: Menampilkan halaman pengenalan
+
+## Fitur
+- Login: Fungsi login untuk user
+- Register: Fungsi registrasi untuk user baru
+- Services: Memberi informasi terkait pelayanan yang tersedia
+- About Us: Memberi informasi terkiat perusahaan
+- Contact Us: Memberi informasi terkait kontak perusahaan
+
+## Pengujian
+Untuk menjalankan pengujian:
+npm test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

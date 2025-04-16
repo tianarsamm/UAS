@@ -1,36 +1,31 @@
-import Navbar from "./components/Navbar";
-import Header from "./components/Headers";
-import Partners from "./components/Partners";
-import Features from "./components/Features";
-import More from "./components/More";
-import Showcase from "./components/Showcase";
-import Testimonials from "./components/Testimonials";
-import Subscribe from "./components/Subscribe";
-import Footer from "./components/Footer";
+// components/templates/MainTemplate.tsx
+import Navbar from "./components/organisms/Navbar";
+import Header from "./components/organisms/Header";
+import Partners from "./components/organisms/Partners";
+import Features from "./components/organisms/Features";
+import More from "./components/organisms/More";
+import Showcase from "./components/organisms/Showcase";
+import Testimonials from "./components/organisms/Testimonials";
+import Subscribe from "./components/organisms/Subscribe";
+import Footer from "./components/organisms/Footer";
 
-export default function App() {
+const MainTemplate = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="font-sans bg-[#d7f5dc]">
       <Navbar />
+      {children}
       <Header />
-
-      {/* Section dengan background putih untuk Partners */}
       <div className="bg-white">
-        <Partners />
+      <Partners />
       </div>
-
-      {/* Spacer dengan background asli (hijau) */}
-      <div className="h-1"></div>
-
-      {/* Section dengan background putih untuk Features */}
-      <div className="bg-white">
-        <Features />
-      </div>
-      <More/>
+      <Features/>
+      <More />
       <Showcase />
       <Testimonials />
       <Subscribe />
       <Footer />
     </div>
   );
-}
+};
+
+export default MainTemplate;

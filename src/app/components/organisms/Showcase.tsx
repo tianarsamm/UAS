@@ -1,3 +1,6 @@
+// components/organisms/Showcase.tsx
+import ProjectCard from "../molecules/ProjectCard";
+
 const projects = [
   {
     image: "/showcase/project1.png",
@@ -25,29 +28,26 @@ const projects = [
   },
 ];
 
-export default function Showcase() {
-  return (
-    <section className="bg-white py-16">
-      <div className="max-w-6xl mx-auto px-6">
-        <p className="text-green-500 font-semibold text-2xl mb-2">OUR PORTFOLIO</p>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
-          We provide the Perfect Solution <br /> to your business growth
-        </h2>
+const Showcase = () => (
+  <section className="bg-white py-16">
+    <div className="max-w-6xl mx-auto px-6">
+      <p className="text-green-500 font-semibold text-2xl mb-2">OUR PORTFOLIO</p>
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+        We provide the Perfect Solution <br /> to your business growth
+      </h2>
 
-        <div className="grid gap-10 md:grid-cols-2">
-          {projects.map((project, index) => (
-            <div key={index} className="space-y-4">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="rounded-xl w-full object-cover"
-              />
-              <h3 className="font-semibold text-lg text-gray-900">{project.title}</h3>
-              <p className="text-gray-600 text-sm">{project.description}</p>
-            </div>
-          ))}
-        </div>
+      <div className="grid gap-10 md:grid-cols-2">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            image={project.image}
+            title={project.title}
+            description={project.description}
+          />
+        ))}
       </div>
-    </section>
-  );
-}
+    </div>
+  </section>
+);
+
+export default Showcase;

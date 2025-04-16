@@ -1,4 +1,6 @@
+// components/organisms/Testimonials.tsx
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import TestimonialCard from "../molecules/TestimonialCard";
 
 const testimonials = [
   {
@@ -46,24 +48,14 @@ export default function Testimonials() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
-            <div
+          {testimonials.map((t, index) => (
+            <TestimonialCard
               key={index}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
-            >
-              <p className="text-sm text-gray-600 mb-6">{testimonial.message}</p>
-              <div className="flex items-center space-x-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-15 h-15 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-sm text-gray-900">{testimonial.name}</p>
-                  <p className="text-xs text-gray-500">{testimonial.title}</p>
-                </div>
-              </div>
-            </div>
+              message={t.message}
+              name={t.name}
+              title={t.title}
+              image={t.image}
+            />
           ))}
         </div>
       </div>
